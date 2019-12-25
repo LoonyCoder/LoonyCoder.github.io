@@ -79,14 +79,12 @@
 
 
 
-<meta name="description" content="Welcome to 我心照明月!今天手把手教大家如何基于Git和Hexo搭建属于自己的博客。附上我的github。 安装git这里安装git，主要是为了使用git命令。因为我所使用的是mac系统，自带git。其他系统的同学可以参照Hexo官方文档或者自行百度git安装方法。查询是否安装成功的命令： 1$ git --version  More info: 如果出现git版本号，则说明安装成功。">
+<meta name="description" content="code bestful and be a best coder.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="基于Git和Hexo搭建博客">
-<meta property="og:url" content="http://yoursite.com/index/blog.html">
+<meta property="og:title" content="我心照明月">
+<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
 <meta property="og:site_name" content="我心照明月">
-<meta property="og:description" content="Welcome to 我心照明月!今天手把手教大家如何基于Git和Hexo搭建属于自己的博客。附上我的github。 安装git这里安装git，主要是为了使用git命令。因为我所使用的是mac系统，自带git。其他系统的同学可以参照Hexo官方文档或者自行百度git安装方法。查询是否安装成功的命令： 1$ git --version  More info: 如果出现git版本号，则说明安装成功。">
-<meta property="article:published_time" content="2019-12-25T02:29:11.279Z">
-<meta property="article:modified_time" content="2019-12-24T07:13:19.263Z">
+<meta property="og:description" content="code bestful and be a best coder.">
 <meta property="article:author" content="张涵">
 <meta name="twitter:card" content="summary">
 
@@ -118,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/index/blog.html"/>
+  <link rel="canonical" href="http://yoursite.com/archives/2019/"/>
 
 
 
 
 
-  <title>基于Git和Hexo搭建博客 | 我心照明月</title>
+  <title>归档 | 我心照明月</title>
   
 
 
@@ -143,7 +141,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,56 +215,111 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-	<h1 class="post-title" itemprop="name headline">基于Git和Hexo搭建博客</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
+      <span class="archive-page-counter">
         
         
-          <p>Welcome to <a href="https://loonycoder.github.io" target="_blank" rel="noopener">我心照明月</a>!<br>今天手把手教大家如何基于Git和Hexo搭建属于自己的博客。<br>附上我的<a href="https://github.com/LoonyCoder/LoonyCoder.github.io" target="_blank" rel="noopener">github</a>。</p>
-<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>这里安装git，主要是为了使用git命令。因为我所使用的是mac系统，自带git。其他系统的同学可以参照<a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo官方文档</a>或者自行百度git安装方法。<br>查询是否安装成功的命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br></pre></td></tr></table></figure>
+        
+          
+        
+        嗯..! 目前共计 2 篇日志。 继续努力。
+      </span>
 
-<p>More info: 如果出现git版本号，则说明安装成功。</p>
-<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>首先去<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官网</a>下载Node.js的安装包，然后按照套路安装就好。<br>也可以使用命令行安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm -g install npm</span><br></pre></td></tr></table></figure>
-
-<p>查看是否安装成功:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br></pre></td></tr></table></figure>
-
-<p>More info: 如果出现版本号，则说明安装成功。</p>
-<h3 id="安装、配置和部署Hexo"><a href="#安装、配置和部署Hexo" class="headerlink" title="安装、配置和部署Hexo"></a>安装、配置和部署Hexo</h3><p>这一步是我们所有步骤这最重要的，所用到的命令也是后面部署发布中反复用到的。但是不用担心，十分简单。</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>首先cd到你想安装的目录路径下，然后输入命令:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo</span><br></pre></td></tr></table></figure>
-<p>再输入你的电脑密码，就开始安装了。</p>
-<p>More info: sudo是系统管理的指令，-g代表全局安装。安装完成后可以通过命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
-<p>查询是否安装成功。</p>
+      
 
         
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2019">2019</h1>
+          </div>
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2019/12/24/index/" itemprop="url">
+              
+                <span itemprop="name">序</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-12-24T14:40:40+08:00"
+              content="2019-12-24" >
+          12-24
+        </time>
       </div>
+
+    </header>
+  </article>
+
+
+
       
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2019/12/24/blog/" itemprop="url">
+              
+                <span itemprop="name">基于Git和Hexo搭建博客</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-12-24T11:53:50+08:00"
+              content="2019-12-24" >
+          12-24
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
       
-      
+
     </div>
-    
-    
-    
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -274,10 +327,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -298,17 +347,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -350,22 +390,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装git"><span class="nav-number">1.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装、配置和部署Hexo"><span class="nav-number">3.</span> <span class="nav-text">安装、配置和部署Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -517,10 +541,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
