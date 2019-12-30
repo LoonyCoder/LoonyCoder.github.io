@@ -85,19 +85,19 @@
 <meta property="og:url" content="http://yoursite.com/2019/12/24/JavaBasic/index.html">
 <meta property="og:site_name" content="我心照明月">
 <meta property="og:description" content="记录一些Java基础的知识点，为了自己查阅资料的时候方便一些。  Java基础JDK和JRE的区别？1、jre即Java Runtime Environment，Java运行环境。包括Java虚拟机和Java类库2、jdk是Java开发工具包，例如：tools.jar  &#x3D;&#x3D; 和 equals的区别1、&#x3D;&#x3D;是一个比较运算符，对于基本类型，比较的是具体的数值(int、double..)；对于引用类型">
-<meta property="og:image" content="http://images.cnitblog.com/blog/587773/201408/041749406935700.png">
+<meta property="og:image" content="http://cdn.tycoding.cn/20180127210359151.png">
 <meta property="og:image" content="http://cdn.tycoding.cn/1120165-20171207161602113-1451349858.png">
 <meta property="og:image" content="http://cdn.tycoding.cn/1120165-20171207162758425-142549066.png">
 <meta property="og:image" content="http://cdn.tycoding.cn/1120165-20171207162815925-341262498.png">
 <meta property="og:image" content="http://cdn.tycoding.cn/%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8.png">
 <meta property="og:image" content="http://cdn.tycoding.cn/%E5%8F%8C%E5%90%91%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8.png">
 <meta property="article:published_time" content="2019-12-24T03:53:50.439Z">
-<meta property="article:modified_time" content="2019-12-30T12:15:05.704Z">
+<meta property="article:modified_time" content="2019-12-30T12:17:33.623Z">
 <meta property="article:author" content="LoonyCoder">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="Java基础">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://images.cnitblog.com/blog/587773/201408/041749406935700.png">
+<meta name="twitter:image" content="http://cdn.tycoding.cn/20180127210359151.png">
 
 
 
@@ -297,7 +297,7 @@
             
               <span class="post-updated">
                 &nbsp; | &nbsp; 更新于
-                <time itemprop="dateUpdated" datetime="2019-12-30T20:15:05+08:00" content="2019-12-30">
+                <time itemprop="dateUpdated" datetime="2019-12-30T20:17:33+08:00" content="2019-12-30">
                   2019-12-30
                 </time>
               </span>
@@ -490,7 +490,7 @@
 
 <p>方法传递时传递的参数其实仅值原参数的一个拷贝，对于基本类型传递的就是具体的值的拷贝，对于引用类型传递的是对象地址。<br>所以上面的例子中，基本数据类型a,b经过swap方法并没有改变原始值，而引用类型arr数组经过swap方法就改变了原始值（因为直接对对象堆内存地址数据操作）。</p>
 <hr>
-<h4 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h4><p><img src="http://images.cnitblog.com/blog/587773/201408/041749406935700.png" alt="IO流"></p>
+<h4 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h4><p><img src="http://cdn.tycoding.cn/20180127210359151.png" alt="IO流"></p>
 <p><strong>1、Java中有几种类型的流？</strong><br>字符流和字节流。字节流继承<em>InputStream</em>和<em>OutputStream</em>；字符流继承自<em>InputStreamReader</em>和<em>OutputStreamWriter</em>。</p>
 <p><strong>2、谈谈Java IO中的方法阻塞</strong><br>Java中的阻塞式方法是指在程序调用该方法时，必须等待输入数据可用或检测到输入结果时结束或抛出异常，否则程序会一直停留在该语句上，不会执行下面的语句。比如<em>read()</em>和<em>readLine()</em>方法。</p>
 <p><strong>3、字符流和字节流的区别？</strong><br>数据的输入和输出在计算机中最终都是通过字节的形式传递的，对应通过<em>InputStream</em>和<em>OutputStream</em>实现，他们都是针对字节操作的。<br>而有时候通常需要读取一些完全是字符的文本数据，通常使用基于字节流的包装类字符流完成操作，他们通过<em>InputStreamReader</em>和<em>OutputStreamWriter</em>实现。<br>字符流是字节流的包装，即使有时候读取的是字符流，但也可能需要转换为字节写入。</p>
