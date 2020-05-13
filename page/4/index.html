@@ -144,57 +144,6 @@
     
     
     <div class="col-12 col-md-8 mx-auto index-info">
-      <a href="/2019/05/05/GetAndPost/">
-        <p class="h4 index-header">浅析Get和Post的区别</p>
-      </a>
-
-      <a href="/2019/05/05/GetAndPost/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">表面的区别
-GET在浏览器回退时是无害的，而POST会再次提交请求。
-
-GET产生的URL地址可以被Bookmark，而POST不可以。
-
-GET请求会被浏览器主动cache，而POST不会，除非手动设置。
-
-GET请求只能进行url编码，而POST支持多种编码方式。
-
-GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。
-
-get方式提交数据的大小（一般来说1024字节），http协议并没有硬性限制，而是与浏览器、服务器、操作系统有关，而POST理论上来说没有大小限制，http协议规范也没有进行大小限制，但实际上post所能传递的数据量根据取决于服务器的设置和内存大小</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-05-05&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Http">Http</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Http">Http</a>&nbsp;
-          
-            <a href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B">网络编程</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-8 mx-auto index-info">
       <a href="/2019/04/28/thread2/">
         <p class="h4 index-header">Java多线程状态切换及基本操作</p>
       </a>
@@ -372,6 +321,62 @@ PlatformTransactionManager，上篇文章已经详情解说了该类所拥有的
             <a href="/tags/%E4%BA%8B%E5%8A%A1">事务</a>&nbsp;
           
             <a href="/tags/Spring">Spring</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2019/03/25/lock/">
+        <p class="h4 index-header">乐观锁与悲观锁随笔</p>
+      </a>
+
+      <a href="/2019/03/25/lock/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">乐观锁介绍：
+认为数据在使用过程中，不会被其他程序修改、所以只有在数据提交时才检测数据是否已经被修改
+实现方法：
+
+1.使用版本号：给数据所在表加个字段，记录数据版本号。提交时检测版本号与未修改前的版本号一不一致。不一致说明数据已经被其他线程修改。 
+
+
+
+2.使用时间截：给数据所在表加个字段，记录时间。提交时检测时间与取出的时间截一不一致。不一致说明数据已经被其他线程修改。
+
+使用场景：
+如上下级审核文件。
+
+悲观锁介绍：
+悲观的认为数据提交时会发生并发冲突，屏蔽一切可能违反数据完整性的操作
+使用方法：
+在准备修改某数据时，给该数据加锁，加锁失败说明有人正在占用，成功则修改数据提交，事务完成</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a>&nbsp;
+          
+            <a href="/tags/%E4%BA%8B%E5%8A%A1">事务</a>&nbsp;
           
         
       </div>
